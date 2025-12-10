@@ -1,11 +1,11 @@
 unit scanner;
 uses Sysutils;
 
-
 interface
 
 type
-    TTokenType = (TOK_NUMBER, TOK_WORD, TOK_LEFTPAREN, TOK_RIGHTPAREN, TOK_SEP);
+    TTokenType = (TOK_LITERAL, TOK_IDENTIFIER, TOK_KEYWORD, TOK_LEFTPAREN, TOK_RIGHTPAREN, TOK_SEP, 
+    TOK_OPERATOR, TOK_RELATION);
 
     (*  Tokens passed over to the parser
     *) 
